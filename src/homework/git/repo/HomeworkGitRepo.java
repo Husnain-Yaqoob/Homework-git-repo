@@ -20,12 +20,14 @@ public class HomeworkGitRepo {
         System.out.println("enter a number");//ask the user to enter a number
         int num= EO.nextInt();
         
-       if(num%2==0){
-           System.out.println("this is even number" + num);
+       if(isOdd(num)){
+           System.out.println("this is an odd number");
        } else{
-           System.out.println("this is odd number");
+           System.out.println("this is even number");
        }
-        
+        EO.close();
     }
-    
+    public static boolean isOdd(int num){
+        return num%2==1;
+    }
 }
